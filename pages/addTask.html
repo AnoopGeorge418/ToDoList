@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList - Add Tasks</title>
+    <link rel="stylesheet" href="../Styles/addTask.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main_container">
+
+        <nav class="navbar">
+            <h1 id="logo">ToDo-List</h1>
+            <div class="themes">
+            <span id="theme-dark" class="material-symbols-outlined">moon_stars</span>
+            <span id="theme-light" class="material-symbols-outlined">wb_sunny</span>
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <div class="sidebar-items">
+                <button id="addTaskSidebar">Add Tasks</button>
+                <button id="viewTaskSidebar">View Tasks</button>
+                <button id="trashSidebar">Trash</button>
+            </div>
+            <div class="clearEverything">
+                <button id="clear">Clear Memory</button>
+            </div>
+        </div>
+
+        <!-- Add tasks body -->
+        <div class="addTaskContainer">
+        <main class="addTasks">
+            <h1>Add Your Daily Task Here...</h1>
+            <div class="taskContainer"><textarea id="taskContents" placeholder="Enter the Tasks Here..."></textarea></div>
+            <button id="addTask">Add Task</button>
+
+            <div class="Message">
+                <p id="success"></p>
+                <p id="error"></p>
+                <p id="warning"></p>
+                <p id="info"></p>
+            </div>
+        </main>
+        </div>
+
+        <div class="viewTaskContainer">
+            <main id="viewTask">
+                <h1>View All Your Added Tasks Here...</h1>
+                <div class="wrapper">
+                    <div id="taskList">
+                        <div class="taskInfo">
+                            <h1 class="taskname">New Task Name</h1>
+                        </div>
+                        <div class="actionBtns">
+                            <button class="TaskTag">New Task</button>
+                            <button class="updateBtn">Update</button>
+                            <button class="deleteBtn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="trashContainer">
+        <main id="trashBtn">
+            <h1>Trash Bin</h1>
+            <div class="wrapper">
+                <div id="taskList">
+                    <div class="taskInfo">
+                        <h1 class="taskname">New Task Name</h1>
+                    </div>
+                    <div class="actionBtns">
+                        <button class="TaskTag">New Task</button>
+                        <button class="updateBtn">Update</button>
+                        <button class="deleteBtn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        </div>
+
+        <div class="Message">
+            <p id="success"></p>
+            <p id="error"></p>
+            <p id="warning"></p>
+            <p id="info"></p>
+        </div>
+      </main>
+
+    </div>
+    <script type="module" src="../Javascript/addTasks.js"></script>
+  </body>
+</html>
